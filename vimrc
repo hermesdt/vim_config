@@ -4,6 +4,25 @@ set autoindent
 set number
 syntax on
 
+" Whitespace stuff
+set nowrap
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+" set list listchars=tab:\ \ ,trail:·
+
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" Remember last location in file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+	\| exe "normal g'\"" | endif
+endif
+
 let Tlist_Ctags_Cmd='~/code/ctags-5.8/ctags'
 let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
