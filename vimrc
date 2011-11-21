@@ -36,3 +36,4 @@ map hh <ESC>:wincmd h<CR>
 map ,n <ESC>:tabnext<CR>
 map ,p <ESC>:tabp<CR>
 map ,t <ESC>:tabnew<CR>
+map ,a <ESC>:Ack 
