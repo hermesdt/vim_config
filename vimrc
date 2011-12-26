@@ -4,6 +4,9 @@ set autoindent
 set number
 syntax on
 
+"set backspace=indent,eol,start
+"set t_kb=ctrl-vBACKSPACE
+
 " Whitespace stuff
 set nowrap
 set tabstop=2
@@ -23,7 +26,7 @@ if has("autocmd")
 	\| exe "normal g'\"" | endif
 endif
 
-let Tlist_Ctags_Cmd='~/code/ctags-5.8/ctags'
+let Tlist_Ctags_Cmd='~/Downloads/ctags-5.8/ctags'
 let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
 
