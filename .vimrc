@@ -10,6 +10,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+set pastetoggle=<F2>
 " set list listchars=tab:\ \ ,trail:·
 
 " Command-T configuration
